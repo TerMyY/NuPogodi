@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:controller="GameController"
+          fx:id="gridPane"
+
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10" vgap="10"
+          prefWidth="1240"
+          prefHeight="800"
+          stylesheets="/frontend/style.css"
+          onKeyPressed="#move">
+
+    <Label fx:id="scoreLabel" id="text" text="0" translateX="100" translateY="-319" />
+    <ImageView fx:id="hp1" translateX="35" translateY="-195"><Image url="/res/hp.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="hp2" translateX="150" translateY="-195"><Image url="/res/hp.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="hp3" translateX="265" translateY="-195"><Image url="/res/hp.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="hp4" translateX="380" translateY="-195"><Image url="/res/hp.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="wolf1"><Image url="/res/wolf1.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="wolf2" visible="false"><Image url="/res/wolf2.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="wolf3" visible="false"><Image url="/res/wolf3.png" backgroundLoading="true" /></ImageView>
+    <ImageView fx:id="wolf4" visible="false"><Image url="/res/wolf4.png" backgroundLoading="true" /></ImageView>
+    <ImageView><Image url="/res/static.png" backgroundLoading="true" /></ImageView>
+
+    <VBox alignment="BOTTOM_LEFT" pickOnBounds="false" translateX="15" translateY="-5" spacing="15">
+        <Button id="qButton" text="Q" onMouseClicked="#moveButton" />
+        <Button id="aButton" text="A" onMouseClicked="#moveButton" />
+    </VBox>
+    <VBox alignment="BOTTOM_RIGHT" pickOnBounds="false" translateX="-15" translateY="-5" spacing="15">
+        <Button id="eButton" text="E" onMouseClicked="#moveButton" />
+        <Button id="dButton" text="D" onMouseClicked="#moveButton" />
+    </VBox>
+
+</GridPane>

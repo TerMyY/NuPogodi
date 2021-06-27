@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="GameOverController"
+
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10" vgap="10"
+          prefWidth="475"
+          prefHeight="375"
+          stylesheets="/frontend/style.css">
+
+    <VBox alignment="CENTER" spacing="15">
+        <Label fx:id="score" />
+        <TextField fx:id="name" />
+        <Button text="✔" onMouseClicked="#submit" />
+    </VBox>
+
+
+
+</GridPane>

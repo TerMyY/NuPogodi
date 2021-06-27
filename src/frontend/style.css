@@ -1,0 +1,131 @@
+.root
+{
+    -fx-background-image: url("../res/background.png");
+    -fx-background-size: stretch;
+    -fx-background-color: lightgray;
+}
+
+.button
+{
+
+    -fx-border-color: black;
+    -fx-border-width: 3;
+    -fx-border-radius: 50%;
+    -fx-background-color: transparent;
+    -fx-text-fill: orange;
+    -fx-font-size: 81;
+    -fx-font-family: "Comic Sans MS", SansSerif;
+
+}
+
+.label
+{
+
+    -fx-font-size: 33;
+    -fx-font-family: "Comic Sans MS", SansSerif;
+
+}
+
+.text-field
+{
+
+    -fx-font-size: 31;
+    -fx-font-family: "Comic Sans MS", SansSerif;
+    -fx-border-color: black;
+    -fx-accent: orange;
+    -fx-border-width: 3;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+
+}
+
+#text
+{
+
+    -fx-font-size: 133;
+    -fx-font-family: "Comic Sans MS", SansSerif;
+
+}
+
+#score
+{
+
+    -fx-font-size: 55;
+    -fx-font-family: "Comic Sans MS", SansSerif;
+
+}
+
+#aButton,#dButton
+{
+
+    -fx-font-size: 95;
+
+
+}
+
+#qButton,#eButton
+{
+
+    -fx-font-size: 55;
+
+}
+
+.list-view
+{
+
+    -fx-background-color: transparent;
+    -fx-accent: orange;
+    -fx-pref-width: 550;
+    -fx-border-width: 3;
+    -fx-border-color: black;
+    -fx-border-radius: 15%;
+
+}
+
+.list-cell
+{
+
+    -fx-background-color: transparent;
+    -fx-translate-x: 35;
+    -fx-translate-y: 15;
+
+}
+
+.scroll-bar, .track
+{
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-fill: transparent;
+
+}
+
+.scroll-bar:vertical
+{
+
+    -fx-translate-x: 3em;
+
+}
+.scroll-bar:horizontal
+{
+
+    -fx-translate-y: 3em;
+
+}
+
+.increment-button, .decrement-button
+{
+
+    -fx-scale-x: 0;
+
+}
+
+.thumb
+{
+
+    -fx-background-color: orange;
+
+}
+
+

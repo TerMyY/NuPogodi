@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="MenuController"
+          fx:id="gridPane"
+
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10" vgap="10"
+          prefWidth="750"
+          prefHeight="750"
+          stylesheets="/frontend/style.css">
+
+        <VBox alignment="CENTER" spacing="75">
+                <Button text="Play" onMouseClicked="#play" prefWidth="395" />
+                <Button text="Scores" onMouseClicked="#score" prefWidth="395" />
+                <Button text="Exit" onMouseClicked="#exit" prefWidth="395" />
+        </VBox>
+
+
+</GridPane>
